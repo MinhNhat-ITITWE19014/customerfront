@@ -1,0 +1,47 @@
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/home">
+          Home
+        </a>
+  
+        <a class="navbar-item" routerLink="/contact">
+          Contact
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Carte
+            </a>
+            <a class="navbar-item">
+              Carte
+            </a>
+            <a class="navbar-item">
+              Carte
+            </a>
+            <a class="navbar-item">
+              Carte
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <a class="user-icon" routerLink="/user">
+              <fa-icon [icon]="faUser"></fa-icon>
+            </a>
+        </div>
+        <div class="navbar-item">
+          <a class ="cart-icon" routerLink="/category">
+            <fa-icon [icon]="faCartShopping"></fa-icon>
+        </a>
+        </div>
+      </div>
+    </div>
+  </nav>

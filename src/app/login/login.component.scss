@@ -1,0 +1,39 @@
+.login-form {
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid #ccc;
+}
+
+* {
+    box-sizing: border-box
+}
+
+input[type=text], input[type=password], input[type=int] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.login-form .container {
+    padding: 60px;
+}
+
+.login-form .container .signup-section{
+    margin-top: 10px;
+}
+
+.login-form .container .signup-section .signup-text{
+    margin-right: 10px;
+}
+
+.login-form .login-button{
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.lbutton{
+    font-size: 15px;
+    padding: 5px 10px;
+}

@@ -1,0 +1,35 @@
+.signup-form {
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid #ccc;
+}
+
+* {
+    box-sizing: border-box
+}
+
+input[type=text], input[type=password], input[type=int] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+ .signup-form .container {
+    margin-top: 5px;
+    padding: 60px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel-button{
+    margin-left: 450px;
+  }
+  .signup-button {
+    flex-basis: 50%;
+  }
