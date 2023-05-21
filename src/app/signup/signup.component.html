@@ -1,44 +1,101 @@
 <section class="hero is-info">
-    <div class="hero-body">
-      <p class="title">
-        Welcome to our web page!
-      </p>
-      <p class="subtitle">
-        Please fill all information to sign up !
-      </p>
-    </div>
-  </section>
+  <div class="hero-body">
+    <p class="title">
+      Welcome to our web page!
+    </p>
+    <p class="subtitle">
+      Please fill all information to sign up !
+    </p>
+  </div>
+</section>
 
-  <section class="signup-form">
-   <div class="container">
-        <label for="name"><b>Fullname:</b></label><br>
-          <input type="text" placeholder="Enter Your Fullname" name="name" required><br>
-        <label for="username"><b>Username:</b></label><br>
-          <input type="text" placeholder="Enter Your Username" name="username" required><br>
-        <label for="password"><b>Password:</b></label><br>
-          <input type="password" placeholder="Enter Your Password" name="password" required><br>
-        <label for="repeat"><b>Repeat Password:</b></label><br>
-          <input type="password" placeholder="Repeat Password" name="repeat" required><br>
-        <label for="mail"><b>Email:</b></label><br>
-          <input type="text" placeholder="Enter Your Email" name="mail" required><br>
-        <label for="address"><b>Address:</b></label><br>
-          <input type="text" placeholder="Enter Your Address" name="address" required><br>
-        <label for="streetname"><b>Street Name:</b></label><br>
-          <input type="text" placeholder="Enter Your Street Name" name="streetname" required><br>
-        <label for="city"><b>City:</b></label><br>
-          <input type="text" placeholder="Enter Your City" name="city" required><br>
-        <label for="poscode"><b>Postal Code number:</b></label><br>
-          <input type="int" placeholder="Enter Your Postal Code Number" name="poscode" required><br>
-        <label for="phone"><b>Phone number:</b></label><br>
-          <input type="int" placeholder="Enter Your Phone Number" name="phone" required><br>
-          <div class="button-container">
-            <div class="cancel-button">
-              <button routerLink="/login">Cancel</button>
-            </div>
-            <div class="signup-button">
-              <button routerLink="/success">Sign Up</button>
-            </div>
-          </div>
-      
- </div>
+
+<section class="signup-form">
+  <div class="container">
+    <form #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
+
+      <label for="name"><b>Fullname:</b> </label><br>
+      <input type="text" placeholder="Enter your fullname" name="fullName" [(ngModel)]="customer.fullName" required>
+      <div
+        *ngIf="signupForm.controls['fullName']?.invalid && (signupForm.controls['fullName'].touched || signupForm.submitted)">
+        <span class="error-message"> *Full Name is required</span>
+      </div> <br>
+
+      <label for="email"><b>Email:</b></label><br>
+      <input type="email" placeholder="Enter your email" name="email" [(ngModel)]="customer.email" required><br>
+      <div
+        *ngIf="signupForm.controls['email']?.invalid && (signupForm.controls['email'].touched || signupForm.submitted)">
+        <span class="error-message"> *Email is required</span>
+      </div>
+      <div *ngIf="errorMessage" class="error-message">{{'*'+errorMessage }}</div> <br>
+
+      <label for="username"><b>Username:</b></label><br>
+      <input type="text" placeholder="Enter your username" name="username" [(ngModel)]="customer.userName" required><br>
+      <div
+        *ngIf="signupForm.controls['username']?.invalid && (signupForm.controls['username'].touched || signupForm.submitted)">
+        <span class="error-message"> *Username cannot be empty</span>
+      </div> <br>
+
+      <label for="password"><b>Password:</b></label><br>
+      <input type="password" placeholder="Enter your password" name="password" [(ngModel)]="customer.password"
+        required><br>
+      <div
+        *ngIf="signupForm.controls['password']?.invalid && (signupForm.controls['password'].touched || signupForm.submitted)">
+        <span class="error-message"> *Please enter your password!</span>
+      </div> <br>
+
+      <label for="cPassword"><b>Confirm Password:</b></label><br>
+      <input type="password" placeholder="Confirm password" [(ngModel)]="customer.confirmPassword" name="cPassword"
+        required><br>
+      <span class="error-message" *ngIf="signupForm.controls['cPassword']?.hasError('incorrect')">*Password does not match confirmation!</span>
+
+      <p>Nhật ơi Redesign cái form Address giúp tui :D</p>
+      <label for="addressNum"><b>Street number:</b></label>
+      <input type="text" placeholder="Street Number" name="addressNum" [(ngModel)]="customer.address.streetNum"
+        required>
+      <div
+        *ngIf="signupForm.controls['addressNum']?.invalid && (signupForm.controls['addressNum'].touched || signupForm.submitted)">
+        <span class="error-message"> *Please enter your address number</span>
+      </div> <br>
+
+      <label for="streetName"><b>Street Name:</b></label>
+      <input type="text" placeholder="Street Name" name="streetName" [(ngModel)]="customer.address.streetName" required>
+      <div
+        *ngIf="signupForm.controls['streetName']?.invalid && (signupForm.controls['streetName'].touched || signupForm.submitted)">
+        <span class="error-message"> *Please enter the street name</span>
+      </div> <br>
+
+      <label for="ward"><b>Ward:</b></label>
+      <input type="text" placeholder="Ward" name="ward" [(ngModel)]="customer.address.ward" required>
+      <div
+        *ngIf="signupForm.controls['ward']?.invalid && (signupForm.controls['ward'].touched || signupForm.submitted)">
+        <span class="error-message"> *Please fill in the ward field</span>
+      </div> <br>
+
+      <label for="district"><b>District:</b></label>
+      <input type="text" placeholder="District" name="district" [(ngModel)]="customer.address.district" required>
+      <div
+        *ngIf="signupForm.controls['district']?.invalid && (signupForm.controls['district'].touched || signupForm.submitted)">
+        <span class="error-message"> *Please fill in the district field</span>
+      </div> <br>
+
+      <label for="city"><b>City:</b></label>
+      <input type="text" placeholder="City" name="city" [(ngModel)]="customer.address.city" required>
+      <div
+        *ngIf="signupForm.controls['city']?.invalid && (signupForm.controls['city'].touched || signupForm.submitted)">
+        <span class="error-message"> *Please fill in the city field</span>
+      </div> <br>
+
+      <label for="postalCode"><b>Postal Code:</b></label>
+      <input type="text" placeholder="Postal Code" name="postalCode" [(ngModel)]="customer.address.postalCode">
+      <div class="button-container">
+        <div class="signup-button">
+          <button type="submit">Sign Up</button>
+        </div>
+        <div class="cancel-button">
+          <button routerLink="/login">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </section>

@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,8 @@ import { CartegoryComponent } from './cartegory/cartegory.component';
 import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -26,12 +29,14 @@ import { ContactComponent } from './contact/contact.component';
     UserComponent,
     OrderComponent,
     ContactComponent,
-  
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
