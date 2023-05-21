@@ -12,6 +12,7 @@ import { CartegoryComponent } from './cartegory/cartegory.component';
 import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ContactComponent } from './contact/contact.component';
     UserComponent,
     OrderComponent,
     ContactComponent,
+    BannerComponent,
   
   ],
   imports: [

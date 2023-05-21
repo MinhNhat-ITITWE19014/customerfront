@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  
+  pictureImages: string[] = [
+    'assets/pimage1.png',
+    'assets/pimage2.png',
+    'assets/pimage3.png',
+    'assets/pimage4.png',
+    'assets/pimage5.png'
+  ];
 }
