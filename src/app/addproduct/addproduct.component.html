@@ -1,0 +1,33 @@
+<app-adminheader></app-adminheader>
+<section class="add-form">
+    <div class="container">
+    <h1>Add product</h1>
+   <form>
+      <label for="productName">Product Name:</label>
+      <input type="text" name="productName" required>
+  
+      <label for="productId">Product ID:</label>
+      <input type="text"  name="productId" required>
+  
+      <label for="category">Category:</label>
+      <select name="category" required>
+        <option value="">Select Category</option>
+        <option value="Iphone">Iphone</option>
+        <option value="Ipad">Ipad</option>
+        <option value="Macbook">Books</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="int" name="quantity" required>
+    
+      <label for="productImage">Product Image:</label>
+      <div class="ifile">
+      <input type="file" name="productImage" accept="image/*">
+    </div>
+    
+      <div class="abutton">
+        <button class="add-button" type="submit">Add</button>
+      </div>
+  </form>
+</div>
+</section>

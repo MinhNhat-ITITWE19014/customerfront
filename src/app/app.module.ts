@@ -18,6 +18,11 @@ import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
 import { SuccesspageComponent } from './successpage/successpage.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
+import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
+import { AdminheaderComponent } from './adminheader/adminheader.component';
+import { AdminuserComponent } from './adminuser/adminuser.component';
+import { VieworderComponent } from './vieworder/vieworder.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
 
 
 @NgModule({
@@ -36,6 +41,11 @@ import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
     SuccesspageComponent,
     CategoryComponent,
     ShoppingcartComponent,
+    AdminhomepageComponent,
+    AdminheaderComponent,
+    AdminuserComponent,
+    VieworderComponent,
+    AddproductComponent,
   
   ],
   imports: [
