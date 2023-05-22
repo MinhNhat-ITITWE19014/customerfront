@@ -20,7 +20,6 @@ import { SuccesspageComponent } from './successpage/successpage.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
