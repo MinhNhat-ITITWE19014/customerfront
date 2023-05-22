@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
 import { ProductComponent } from './product/product.component';
 import { SuccesspageComponent } from './successpage/successpage.component';
+import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'banner', component: BannerComponent},
   { path: 'product', component: ProductComponent},
   { path: 'successpage', component: SuccesspageComponent},
+  { path: 'shoppingcart', component: ShoppingcartComponent},
 ];
 
 @NgModule({

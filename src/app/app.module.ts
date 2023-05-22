@@ -17,6 +17,7 @@ import { BannerComponent } from './banner/banner.component';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
 import { SuccesspageComponent } from './successpage/successpage.component';
+import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 
 
 
@@ -35,6 +36,7 @@ import { SuccesspageComponent } from './successpage/successpage.component';
     ProductComponent,
     SuccesspageComponent,
     CategoryComponent,
+    ShoppingcartComponent,
   
   ],
   imports: [
