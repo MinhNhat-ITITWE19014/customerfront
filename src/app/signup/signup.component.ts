@@ -2,6 +2,7 @@ import { FormGroup, NgForm } from '@angular/forms';
 import { Customer } from '../interface/customer';
 import { CustomerService } from './../service/customer.service';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -28,7 +29,7 @@ export class SignupComponent {
     }
   };
 
-  constructor(private customerService: CustomerService) { }
+  constructor(private customerService: CustomerService, private router: Router) { }
 
   signup(signupForm: NgForm) {
     const password = signupForm.form.controls['password'].value;
@@ -70,7 +71,7 @@ export class SignupComponent {
           // Handle the success response
           console.log('Success customer request:', response);
           // Redirect to success page or show a success message
-          
+          this.router.navigate(['/successpage']);
         }
       },
         error => {
@@ -81,4 +82,3 @@ export class SignupComponent {
       );
   }
 }
-

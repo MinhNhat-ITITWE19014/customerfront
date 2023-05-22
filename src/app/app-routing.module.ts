@@ -9,6 +9,7 @@ import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
 import { ProductComponent } from './product/product.component';
+import { SuccesspageComponent } from './successpage/successpage.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'banner', component: BannerComponent},
   { path: 'product', component: ProductComponent},
+  { path: 'successpage', component: SuccesspageComponent},
 ];
 
 @NgModule({

@@ -37,11 +37,23 @@
     display: block;
   text-align: center;
   }
+
+  .picture-item h2 {
+    color: black;
+    font-size: 25px;
+    display: block;
+  text-align: center;
+  }
   
   .picture-item img {
     height: 200px;
     width: 200px;
     object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .picture-item img:hover {
+    transform: scale(1.2); /* Increase the scale factor as desired */
   }
   
   .picture-name {

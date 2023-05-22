@@ -11,6 +11,12 @@
     </div>
     <div class="information">
       <h3>40k</h3>
+      <div class="memory">
+        <button class="mem" [class.active]>128GB</button>
+        <button class="mem" [class.active]>256GB</button>
+        <button class="mem" [class.active]>512GB</button>
+        <button class="mem" [class.active]>1TB</button>
+      </div>
       <div class="color">
         <button class="bcolor" [class.active]="selectedImage === 'assets/ip14mb.png'" (click)="changeImage('assets/ip14mb.png')">Black</button>
         <button class="bcolor" [class.active]="selectedImage === 'assets/ip14mg.png'" (click)="changeImage('assets/ip14mg.png')">Gold</button>

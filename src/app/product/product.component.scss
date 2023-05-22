@@ -11,7 +11,7 @@ h1{
 }
 .box {
     border: 1px solid black;
-    width: 600px;
+    width: 580px;
     padding: 10px;
   }
   
@@ -27,7 +27,7 @@ h1{
 }
 
 .color{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .bcolor{
@@ -66,4 +66,27 @@ h1{
     color: #ffa31a;
     background-color: white;
     border: solid #ffa31a;
+}
+ .memory{
+    margin-top: 30px;
+ }
+
+.mem{
+    font-family: sans-serif;
+    font-size: 12px;
+    width:80px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.mem:hover {
+    background-color: #ffad33;
+    border-color: transparent;
+  }
+
+.mem.active {
+    background-color: #ffad33;
 }

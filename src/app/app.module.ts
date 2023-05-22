@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
+import { SuccesspageComponent } from './successpage/successpage.component';
 
 
 
@@ -33,6 +34,7 @@ import { ProductComponent } from './product/product.component';
     ContactComponent,
     BannerComponent,
     ProductComponent,
+    SuccesspageComponent,
   
   ],
   imports: [

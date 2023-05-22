@@ -9,7 +9,6 @@
 }
 
 .navbar-start .navbar-item {
-  border-left: 1px solid gray; /* Add left border */
   border-right: 1px solid gray; /* Add right border */
 }
 
@@ -69,3 +68,22 @@
   color: red;
 }
 
+.cart-icon {
+  position: relative;
+}
+
+.number-cart {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: red;
+  color: white;
+  font: sans-serif;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
