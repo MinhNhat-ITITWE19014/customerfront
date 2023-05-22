@@ -1,17 +1,13 @@
-<section class="hero is-info">
-  <div class="hero-body">
-    <p class="title">
-      Welcome to our web page!
-    </p>
-    <p class="subtitle">
-      Please fill all information to sign up !
-    </p>
-  </div>
-</section>
+<app-header></app-header>
 
 
 <section class="signup-form">
   <div class="container">
+    <div class="LogorSign">
+      <h4 routerLink="/login" class="llink">Login</h4>
+      <span class="vertical-slash"></span>
+      <h4 routerLink="/signup" class="slink">Signup</h4>
+    </div>
     <form #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
 
       <label for="name"><b>Fullname:</b> </label><br>
@@ -49,7 +45,6 @@
         required><br>
       <span class="error-message" *ngIf="signupForm.controls['cPassword']?.hasError('incorrect')">*Password does not match confirmation!</span>
 
-      <p>Nhật ơi Redesign cái form Address giúp tui :D</p>
       <label for="addressNum"><b>Street number:</b></label>
       <input type="text" placeholder="Street Number" name="addressNum" [(ngModel)]="customer.address.streetNum"
         required>
@@ -89,12 +84,13 @@
       <label for="postalCode"><b>Postal Code:</b></label>
       <input type="text" placeholder="Postal Code" name="postalCode" [(ngModel)]="customer.address.postalCode">
       <div class="button-container">
-        <div class="signup-button">
-          <button type="submit">Sign Up</button>
+        <div class="sbutton">
+          <button class="signup-button" type="submit">Sign Up</button>
         </div>
-        <div class="cancel-button">
-          <button routerLink="/login">Cancel</button>
-        </div>
+        <div class="login-section">
+          <span class="login-text">Already have an account?</span>
+          <a routerLink="/login">Login</a>
+       </div>
       </div>
     </form>
   </div>

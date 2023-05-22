@@ -8,7 +8,9 @@ import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
+import { ProductComponent } from './product/product.component';
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
@@ -18,7 +20,7 @@ const routes: Routes = [
   { path: 'order', component: OrderComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'banner', component: BannerComponent},
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'product', component: ProductComponent},
 ];
 
 @NgModule({

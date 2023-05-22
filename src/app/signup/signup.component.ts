@@ -70,6 +70,7 @@ export class SignupComponent {
           // Handle the success response
           console.log('Success customer request:', response);
           // Redirect to success page or show a success message
+          
         }
       },
         error => {

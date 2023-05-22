@@ -1,16 +1,12 @@
-<section class="hero is-info">
-  <div class="hero-body">
-    <p class="title">
-      Welcome to our web page!
-    </p>
-    <p class="subtitle">
-      Please login
-    </p>
-  </div>
-</section>
+<app-header></app-header>
 
 <section class="login-form">
   <div class="container">
+    <div class="LogorSign">
+      <h4 routerLink="/login" class="llink">Login</h4>
+      <span class="vertical-slash"></span>
+      <h4 routerLink="/signup" class="slink">Signup</h4>
+    </div>
     <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
       <label for="Email"><b>Email:</b></label><br>
       <input type="text" placeholder="Enter Your Email" name="email" [(ngModel)]="email"><br>
@@ -20,8 +16,9 @@
       </div>
       <label for="password"><b>Password:</b></label><br>
       <input type="password" placeholder="Enter Your Password" name="password" [(ngModel)]="password"><br>
-      <div class="login-button">
-        <button class="lbutton" type="submit">Login</button>
+      <div class="button-container">
+      <div class="lbutton">
+        <button class="login-button" type="submit">Login</button>
       </div>
       <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div><br>
 
@@ -29,6 +26,7 @@
         <span class="signup-text">Haven't signed up yet?</span>
         <a routerLink="/signup">Sign Up</a>
       </div>
+    </div>
     </form>
   </div>
 </section>

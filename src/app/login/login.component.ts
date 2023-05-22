@@ -13,6 +13,7 @@ export class LoginComponent {
   email: string ='';
   password: string='';
 
+
   constructor(private loginService: LoginService, private router: Router) { }
 
   login(loginForm: NgForm) {
