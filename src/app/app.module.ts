@@ -9,7 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-import { CartegoryComponent } from './cartegory/cartegory.component';
+import { CategoryComponent } from './category/category.component';
 import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
@@ -28,13 +28,13 @@ import { SuccesspageComponent } from './successpage/successpage.component';
     HomeComponent,
     SignupComponent,
     LoginComponent,
-    CartegoryComponent,
     UserComponent,
     OrderComponent,
     ContactComponent,
     BannerComponent,
     ProductComponent,
     SuccesspageComponent,
+    CategoryComponent,
   
   ],
   imports: [
