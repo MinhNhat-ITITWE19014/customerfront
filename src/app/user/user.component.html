@@ -4,16 +4,16 @@
         <a class="navbar-item" routerLink="/home">
           Home
         </a>
-  
+
         <a class="navbar-item" routerLink="/contact">
           Contact
         </a>
-  
+
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             More
           </a>
-  
+
           <div class="navbar-dropdown">
             <a class="navbar-item">
               Carte
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="navbar-end">
         <div class="navbar-item">
           <a class ="cart-icon" routerLink="/category">
@@ -44,5 +44,5 @@
 <p>user works!</p>
 hiển thị thông tin khách hàng
 <div class="logout-button">
-    <button class ="lbutton" routerLink="/login">Logout</button>
+    <button class ="lbutton" (click)="logout()">Logout</button>
 </div>

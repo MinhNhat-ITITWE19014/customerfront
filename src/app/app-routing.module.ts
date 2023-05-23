@@ -9,10 +9,12 @@ import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
 import { ProductComponent } from './product/product.component';
+import { AuthGuard } from './guards/auth.guard';
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent ,canActivate:[AuthGuard]},
   { path: 'login', component: LoginComponent},
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
   { path: 'signup', component: SignupComponent },
   { path: 'success', component: SignupComponent },
   { path: 'category', component: CartegoryComponent},
