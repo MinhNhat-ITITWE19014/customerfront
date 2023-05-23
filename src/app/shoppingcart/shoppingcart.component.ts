@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./shoppingcart.component.scss']
 })
 export class ShoppingcartComponent {
-
+  pictureImages: string[] = [
+    'assets/ip14mb.png',
+    'assets/ip14mw.png',
+  ];
 }

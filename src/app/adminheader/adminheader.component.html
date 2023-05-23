@@ -2,12 +2,12 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" routerLink="/adminhomepage">
-          Home
+          <a class="text"> Home </a>
         </a>
   
         <div class="navbar-item link has-dropdown is-hoverable">
-          <div class="navbar-link">
-            More
+          <div class="navbar-item">
+            <a class="text"> More <fa-icon [icon]="faAngleDown"></fa-icon></a>
           </div>
          <div class="subnavbar">
           <div class="row">
@@ -48,12 +48,19 @@
           <a class ="vieworder-icon" routerLink="/vieworder">
             <fa-icon [icon]="faClipboard"></fa-icon>
         </a>
+        <span class="number-cart">0</span>
+        </div>
+        <div class="navbar-item">
+          <a class ="list-icon" routerLink="/productlist">
+            <fa-icon [icon]="faClipboardList"></fa-icon>
+        </a>
         </div>
         <div class="navbar-item">
           <a class ="plus-icon" routerLink="/addproduct">
             <fa-icon [icon]="faPlus"></fa-icon>
         </a>
         </div>
+       
       </div>
     </div>
   </nav>

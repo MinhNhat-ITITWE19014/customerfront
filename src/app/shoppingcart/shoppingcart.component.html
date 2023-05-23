@@ -1,1 +1,31 @@
-<p>shoppingcart works!</p>
+<app-header></app-header>
+<div class="container">
+    <div class="headline">
+        <h4>Your Cart:</h4>
+    </div>
+        <div class="shopping-cart">
+            <ul class="cart-items">
+              <li class="cart-item">
+                <img src="assets/ip14mb.png" alt="Product 1">
+                <div class="item-details">
+                  <h3 class="item-name">Iphone14 Pro Max</h3>
+                  <p class="item-price">40k</p>
+                </div>
+                <a href="" class="delete-link">Delete(chưa làm)</a>
+              </li>
+              <li class="cart-item">
+                <img src="assets/ip14mb.png" alt="Product 2">
+                <div class="item-details">
+                  <h3 class="item-name">Iphone14 Pro Max</h3>
+                  <p class="item-price">40k</p>
+                </div>
+                <a href="" class="delete-link">Delete(chưa làm)</a>
+              </li>
+              <!-- Add more cart items as needed -->
+            </ul>
+            <div class="total-price">Total: 80K(tự tính)</div>
+    </div>
+    <div class="cbutton">
+        <button class="checkout-button" routerLink="/order">Checkout</button>
+    </div>
+</div>

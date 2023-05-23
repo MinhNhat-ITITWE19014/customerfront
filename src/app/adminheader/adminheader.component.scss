@@ -1,6 +1,6 @@
 .vieworder-icon{
     color:white;
-    position: relative;
+    margin-right: 2px;
   }
   
   .user-icon{
@@ -11,6 +11,11 @@
   .plus-icon{
     color:white;
     margin-right: 20px;
+  }
+
+  .list-icon{
+    color:white;
+    margin-right: 2px;
   }
   .navbar-start .navbar-item {
     border-right: 1px solid gray; /* Add right border */
@@ -35,7 +40,7 @@
     width: 100vw;
     left: 0;
     right: 0;
-    background-color: #f9f9f9;
+    background-color: #e6e6e6;
     border-top: 1px solid #ccc;
     z-index: 1;
     padding: 20px;
@@ -54,16 +59,15 @@
   }
   
   .subnavbar h3 {
-    text-decoration: underline;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 20px;
-    color: #ef0a0a;
+    color: Red;
   }
   
   .subnavbar a {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #000;
     text-decoration: none;
   }
   
@@ -76,7 +80,7 @@
   .number-cart {
     position: absolute;
     top: 6px;
-    right: 25px;
+    right: 0px;
     background-color: red;
     color: white;
     font: sans-serif;
@@ -87,4 +91,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .vieworder-icon:hover{
+    color: red;
+  }
+
+  .user-icon:hover{
+    color: red;
+  }
+
+  .list-icon:hover{
+    color: red;
+  }
+
+  .plus-icon:hover{
+    color: red;
+  }
+
+  .text{
+    color: white;
+  }
+
+  .text:hover{
+    color: red;
   }
