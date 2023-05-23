@@ -11,6 +11,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 export class UserComponent {
   constructor(private LoginService: LoginService, private router: Router){}
   faCartShopping= faCartShopping;
+  
   logout():void{
     this.LoginService.logout();
     this.router.navigateByUrl('/login')
