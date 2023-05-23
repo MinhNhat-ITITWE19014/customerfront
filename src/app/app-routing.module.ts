@@ -17,10 +17,12 @@ import { AdminuserComponent } from './adminuser/adminuser.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 
+import { AuthGuard } from './guards/auth.guard';
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent ,canActivate:[AuthGuard]},
   { path: 'login', component: LoginComponent},
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
   { path: 'signup', component: SignupComponent },
   { path: 'success', component: SignupComponent },
   { path: 'category', component: CategoryComponent},
