@@ -1,6 +1,11 @@
 <nav class="navbar is-black" role="navigation" aria-label="main navigation">
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
+        <div class="navbar-item">
+        <a class="logo">
+          <img src="/assets/pear.png" alt="Logo" >
+        </a>
+      </div>
         <a class="navbar-item" routerLink="/home">
           <a class="text"> Home </a>
         </a>
@@ -8,17 +13,15 @@
         <a class="navbar-item" routerLink="/contact">
           <a class="text"> Contact </a>
         </a>
-  
-        <div class="navbar-item link has-dropdown is-hoverable">
+        
           <div class="navbar-item">
             <a class="text"> More <fa-icon [icon]="faAngleDown"></fa-icon></a>
-          </div>
           <div class="subnav-content">
-            <a href="#company">Iphone</a>
-            <a href="#team">Ipad</a>
-            <a href="#careers">Macbook</a>
+            <a routerLink="/category">Iphone</a>
+            <a routerLink="/category">Ipad</a>
+            <a routerLink="/category">Macbook</a>
           </div>
-      </div>
+          </div>
     </div>
       <div class="navbar-end">
         <div class="navbar-item">

@@ -19,7 +19,6 @@ input[type=email]{
 
 .signup-form .container {
   margin-top: 20px;
-  
   padding:20px 60px 60px 60px;
   border: 1px solid #ccc;
   width: 700px;
@@ -33,7 +32,6 @@ button:hover {
 }
 
 .button-container {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,20 +58,10 @@ button:hover {
 }
 
 
-
-
-/* Styling for the error messages */
 .error-message {
-  color: red; /* Update the error message color as desired */
-  /* Add any other styles specific to the error messages */
+  color: red; 
 }
 
-
-
-.form-box {
-  padding: 20px; /* Add padding around the form box */
-  /* Add any other styles specific to the form box */
-}
 
 .login-text{
 margin-right: 10px;

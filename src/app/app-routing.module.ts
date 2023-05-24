@@ -9,6 +9,7 @@ import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
 import { ProductComponent } from './product/product.component';
+import { AdminproductComponent } from './adminproduct/adminproduct.component';
 import { SuccesspageComponent } from './successpage/successpage.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { AdminheaderComponent } from './adminheader/adminheader.component';
@@ -19,6 +20,7 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
+import { AdmincategoryComponent } from './admincategory/admincategory.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent ,canActivate:[AuthGuard]},
@@ -32,6 +34,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'banner', component: BannerComponent},
   { path: 'product', component: ProductComponent},
+  { path: 'adminproduct', component: AdminproductComponent},
   { path: 'successpage', component: SuccesspageComponent},
   { path: 'shoppingcart', component: ShoppingcartComponent},
   { path: 'adminheader', component: AdminheaderComponent},
@@ -41,6 +44,7 @@ const routes: Routes = [
   { path: 'addproduct', component: AddproductComponent },
   { path: 'productlist', component: ProductlistComponent },
   { path: 'customerlist', component: CustomerlistComponent },
+  { path: 'admincategory', component: AdmincategoryComponent},
 ];
 
 @NgModule({
