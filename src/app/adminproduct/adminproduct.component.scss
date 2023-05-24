@@ -1,0 +1,73 @@
+.container{
+    margin: 20px;
+    width: 100vw;
+    display: flex;
+}
+h1{ 
+    color: black;
+    font-weight: 450;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.box {
+    border: 1px solid black;
+    width: 580px;
+    padding: 10px;
+  }
+  
+.img-border{
+    width: fit-content;
+}
+
+.information{
+    color: red;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left:160px ;
+}
+
+.color{
+    margin-top: 50px;
+}
+
+.bcolor{
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.bcolor:hover {
+    background-color: #ffad33;
+    border-color: transparent;
+  }
+
+.bcolor.active {
+    background-color: #ffad33;
+  }
+
+ .memory{
+    margin-top: 30px;
+ }
+
+.mem{
+    font-family: sans-serif;
+    font-size: 12px;
+    width:80px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.mem:hover {
+    background-color: #ffad33;
+    border-color: transparent;
+  }
+
+.mem.active {
+    background-color: #ffad33;
+}

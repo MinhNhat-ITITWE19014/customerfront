@@ -14,21 +14,20 @@
   .CusorPro {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .plink{
     color: #121111;
     font-size: 30px;
     margin: 0 10px;
-    cursor: pointer;
+    text-decoration: underline;
   }
   
   .clink {
     color: #b3b3b3;
     font-size: 30px;
     margin: 0 10px;
-    cursor: pointer;
   }
   
   .clink:hover {
