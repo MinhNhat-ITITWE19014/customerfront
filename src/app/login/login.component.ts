@@ -8,13 +8,14 @@ import { LoginService } from '../service/login.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
+
 export class LoginComponent {
   errorMessage: string = '';
   email: string = '';
   password: string = '';
 
   constructor(private loginService: LoginService, private router: Router) { }
-
+  
   login(loginForm: NgForm) {
     const email = this.email;
     const password = this.password;

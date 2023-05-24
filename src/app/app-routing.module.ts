@@ -17,6 +17,9 @@ import { AdminuserComponent } from './adminuser/adminuser.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ProductlistComponent } from './productlist/productlist.component';
+import { CustomerlistComponent } from './customerlist/customerlist.component';
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent ,canActivate:[AuthGuard]},
   { path: 'login', component: LoginComponent},
@@ -36,6 +39,8 @@ const routes: Routes = [
   { path: 'adminuser', component: AdminuserComponent},
   { path: 'vieworder', component: VieworderComponent},
   { path: 'addproduct', component: AddproductComponent },
+  { path: 'productlist', component: ProductlistComponent },
+  { path: 'customerlist', component: CustomerlistComponent },
 ];
 
 @NgModule({

@@ -23,6 +23,8 @@ import { AdminheaderComponent } from './adminheader/adminheader.component';
 import { AdminuserComponent } from './adminuser/adminuser.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
+import { ProductlistComponent } from './productlist/productlist.component';
+import { CustomerlistComponent } from './customerlist/customerlist.component';
 
 
 @NgModule({
@@ -46,6 +48,8 @@ import { AddproductComponent } from './addproduct/addproduct.component';
     AdminuserComponent,
     VieworderComponent,
     AddproductComponent,
+    ProductlistComponent,
+    CustomerlistComponent,
   
   ],
   imports: [

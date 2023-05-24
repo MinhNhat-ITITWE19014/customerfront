@@ -26,16 +26,12 @@ input[type=text], input[type=password], input[type=int] {
     margin-top: 10px;
 }
 
-
-
-
 button:hover {
     color: white;
     background-color: rgba(5, 110, 134, 0.971);
   }
   
   .button-container {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +45,7 @@ button:hover {
     display: inline-block;
     z-index: 1;
     overflow: hidden;
-    color: #fff;
+    color: white;
     background-color: #f9bb01;
     border: 0;
     font-size: 13px;
