@@ -12,7 +12,6 @@ import { Component, OnInit} from '@angular/core';
       'assets/image3.png',
       'assets/image4.png',
       'assets/image5.png',
-      'assets/image6.png'
     ];
     currentImageIndex = 0;
   

@@ -6,30 +6,12 @@
             <img src="/assets/pear.png" alt="Logo" >
           </a>
         </div>
-        <a class="navbar-item" routerLink="/adminhomepage">
-          <a class="text"> Home </a>
-        </a>
-  
-        <div class="navbar-item">
-          <a class="text"> More <fa-icon [icon]="faAngleDown"></fa-icon></a>
-        <div class="subnav-content">
-          <a routerLink="/admincategory">Iphone</a>
-          <a routerLink="/admincategory">Ipad</a>
-          <a routerLink="/admincategory">Macbook</a>
-        </div>
-        </div>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
-            <a class="user-icon" routerLink="/adminuser">
+            <a class="user-icon" routerLink="/customerlist">
               <fa-icon [icon]="faUser"></fa-icon>
             </a>
-        </div>
-        <div class="navbar-item">
-          <a class ="vieworder-icon" routerLink="/vieworder">
-            <fa-icon [icon]="faClipboard"></fa-icon>
-        </a>
-        <span class="number-cart">0</span>
         </div>
         <div class="navbar-item">
           <a class ="list-icon" routerLink="/productlist">
@@ -37,11 +19,23 @@
         </a>
         </div>
         <div class="navbar-item">
+          <a class ="vieworder-icon" routerLink="/vieworder">
+            <fa-icon [icon]="faClipboard"></fa-icon>
+        </a>
+        <span class="number-cart">0</span>
+        </div>
+       
+        <div class="navbar-item">
           <a class ="plus-icon" routerLink="/addproduct">
             <fa-icon [icon]="faPlus"></fa-icon>
         </a>
         </div>
        
+        <div class="navbar-item">
+          <a class ="logout-icon" routerLink="/login">
+            <fa-icon [icon]="faArrowRightFromBracket"></fa-icon>
+        </a>
+        </div>
       </div>
     </div>
   </nav>

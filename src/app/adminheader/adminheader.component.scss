@@ -10,7 +10,6 @@
   
   .plus-icon{
     color:white;
-    margin-right: 20px;
   }
 
   .list-icon{
@@ -18,6 +17,11 @@
     margin-right: 2px;
   }
   
+  .logout-icon{
+    color:white;
+    margin-right: 20px;
+  }
+
   .subnav-content {
     display: none;
     position: absolute;
@@ -80,6 +84,10 @@
   }
 
   .plus-icon:hover{
+    color: red;
+  }
+
+  .logout-icon:hover{
     color: red;
   }
 

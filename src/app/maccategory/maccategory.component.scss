@@ -1,0 +1,59 @@
+h2{
+    font-weight: 600;
+    color: #000;
+  }
+  
+
+  .picture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .picture-item {
+    width: 200px; 
+    text-align: center;
+    margin:20px 20px;
+  }
+  
+  .picture-item a {
+    display: block;
+  text-align: center;
+  }
+
+  .picture-item h2 {
+    color: black;
+    font-size: 25px;
+    display: block;
+  text-align: center;
+  
+  }
+  
+  .picture-item img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .picture-item img:hover {
+    transform: scale(1.2); 
+  }
+  
+  .picture-name {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .picture-name:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .itemname {
+    margin-top: 30px;
+    margin-left: 30px;
+    text-decoration: underline;
+  }

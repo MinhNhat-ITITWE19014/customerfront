@@ -13,7 +13,7 @@ h2{
   .picture-item {
     width: 200px; 
     text-align: center;
-    margin:20px 10px;
+    margin:20px 20px;
   }
   
   .picture-item a {
@@ -55,5 +55,137 @@ h2{
   .itemname {
     margin-top: 30px;
     margin-left: 30px;
+    text-decoration: underline;
+  }
+
+  .picture-item14 {
+    width: 200px; 
+    text-align: center;
+    margin:20px 20px;
+  }
+
+  .picture-item14 a {
+    display: block;
+  text-align: center;
+  }
+
+  .picture-item14 h2 {
+    color: black;
+    font-size: 25px;
+    display: block;
+  text-align: center;
+  }
+
+  .picture-name14 {
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .picture-name14:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .picture-item14 img {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .picture-item14 img:hover {
+    transform: scale(1.2); 
+  }
+
+  .picture-item12p {
+    width: 200px; 
+    text-align: center;
+    margin:20px 20px;
+    margin-top:60px
+  }
+  
+  .picture-item12p a {
+    display: block;
+  text-align: center;
+  }
+
+  .picture-item12p h2 {
+    color: black;
+    font-size: 25px;
+    display: block;
+  text-align: center;
+  
+  }
+  
+  .picture-item12p img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .picture-item12p img:hover {
+    transform: scale(1.2); 
+  }
+  
+  .picture-name12p {
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .picture-name12p:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .picture-item12 {
+    width: 200px; 
+    text-align: center;
+    margin:20px 10px;
+    margin-top: 33px;
+  }
+  
+  .picture-item12 a {
+    display: block;
+  text-align: center;
+  }
+
+  .picture-item12 h2 {
+    color: black;
+    font-size: 25px;
+    display: block;
+  text-align: center;
+  
+  }
+  
+  .picture-item12 img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .picture-item12 img:hover {
+    transform: scale(1.2); 
+  }
+  
+  .picture-name12 {
+    margin-top: 27px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .picture-name12:hover {
+    color: red;
     text-decoration: underline;
   }
