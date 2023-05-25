@@ -25,8 +25,6 @@ import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
-import { AdminproductComponent } from './adminproduct/adminproduct.component';
-import { AdmincategoryComponent } from './admincategory/admincategory.component';
 import { IpadcategoryComponent } from './ipadcategory/ipadcategory.component';
 import { MaccategoryComponent } from './maccategory/maccategory.component';
 
@@ -54,8 +52,6 @@ import { MaccategoryComponent } from './maccategory/maccategory.component';
     AddproductComponent,
     ProductlistComponent,
     CustomerlistComponent,
-    AdminproductComponent,
-    AdmincategoryComponent,
     IpadcategoryComponent,
     MaccategoryComponent,
   
