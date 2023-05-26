@@ -1,33 +1,64 @@
 <app-adminheader></app-adminheader>
 <section class="add-form">
-    <div class="container">
-    <h1>Add product</h1>
-   <form>
+  <div class="container">
+    <h1>Add Product</h1>
+    <form #addProductForm="ngForm" (ngSubmit)="addProduct(addProductForm)">
       <label for="productName">Product Name:</label>
-      <input type="text" name="productName" required>
-  
-      <label for="productId">Product ID:</label>
-      <input type="text"  name="productId" required>
-  
-      <label for="category">Category:</label>
-      <select name="category" required>
-        <option value="">Select Category</option>
-        <option value="Iphone">Iphone</option>
-        <option value="Ipad">Ipad</option>
-        <option value="Macbook">Books</option>
-      </select>
+      <input type="text" name="productName" [(ngModel)]="product.productName" required>
+      <div
+        *ngIf="addProductForm.controls['productName']?.invalid && (addProductForm.controls['productName'].touched || addProductForm.submitted)">
+        <span class="error-message"> *Product name cannot be empty</span>
+      </div>
+      <label for="productDesc">Product Description:</label><br>
+      <textarea name="productDesc" height="30px" width="120px" [(ngModel)]="product.productDesc" required></textarea>
+      <div
+        *ngIf="addProductForm.controls['productDesc']?.invalid && (addProductForm.controls['productDesc'].touched || addProductForm.submitted)">
+        <span class="error-message"> *Product description cannot be empty</span>
+      </div>
+      <br>
+
+      <label for="price">Price:</label>
+      <input type="text" name="price" [(ngModel)]="product.price" required>
+      <div *ngIf="addProductForm.controls['price']?.touched && addProductForm.controls['price'].hasError('required')"
+        class="error-message">
+        Price is required.
+      </div>
 
       <label for="quantity">Quantity:</label>
-      <input type="int" name="quantity" required>
-    
+      <input type="number" name="quantityInStock" [(ngModel)]="product.quantityInStock" required appPriceformat>
+      <div
+        *ngIf="addProductForm.controls['quantityInstock']?.touched && addProductForm.controls['quantityInstock'].hasError('required')"
+        class="error-message">
+        Quantity is required.
+      </div>
+
+      <label for="category">Category:</label>
+      <select name="category" [(ngModel)]="product.category.categoryID" required>
+        <option value="">--Select Category--</option>
+        <ng-container *ngFor="let category of categories">
+          <ng-container *ngIf="category.parentCategory">
+            <option [value]="category.categoryID">{{ category.categoryName }}</option>
+          </ng-container>
+        </ng-container>
+      </select>
+      <div
+        *ngIf="addProductForm.controls['category']?.invalid && (addProductForm.controls['category'].touched || addProductForm.submitted)">
+        <span class="error-message"> *Please select a category</span>
+      </div>
+
       <label for="productImage">Product Image:</label>
       <div class="ifile">
-      <input type="file" name="productImage" accept="image/*">
-    </div>
-    
+        <input type="file" name="productImage" accept="image/*" (change)="onFileSelected($event)" required>
+      </div>
+      <!-- <div     INCOMPLETE
+        *ngIf="addProductForm.controls['productImage']?.touched && addProductForm.controls['productImage'].hasError('required')"
+        class="error-message">
+        *A product image is required.
+      </div> -->
+
       <div class="abutton">
         <button class="add-button" type="submit">Add</button>
       </div>
-  </form>
-</div>
+    </form>
+  </div>
 </section>

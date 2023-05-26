@@ -50,7 +50,7 @@ import { CustomerlistComponent } from './customerlist/customerlist.component';
     AddproductComponent,
     ProductlistComponent,
     CustomerlistComponent,
-  
+
   ],
   imports: [
     BrowserModule,
