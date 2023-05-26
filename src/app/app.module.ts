@@ -20,7 +20,6 @@ import { SuccesspageComponent } from './successpage/successpage.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
 import { AdminheaderComponent } from './adminheader/adminheader.component';
-import { AdminuserComponent } from './adminuser/adminuser.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ProductlistComponent } from './productlist/productlist.component';
@@ -47,7 +46,6 @@ import { MaccategoryComponent } from './maccategory/maccategory.component';
     ShoppingcartComponent,
     AdminhomepageComponent,
     AdminheaderComponent,
-    AdminuserComponent,
     VieworderComponent,
     AddproductComponent,
     ProductlistComponent,

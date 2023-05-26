@@ -13,7 +13,6 @@ import { SuccesspageComponent } from './successpage/successpage.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { AdminheaderComponent } from './adminheader/adminheader.component';
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
-import { AdminuserComponent } from './adminuser/adminuser.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { AuthGuard } from './guards/auth.guard';
@@ -38,7 +37,6 @@ const routes: Routes = [
   { path: 'shoppingcart', component: ShoppingcartComponent},
   { path: 'adminheader', component: AdminheaderComponent},
   { path: 'adminhomepage', component: AdminhomepageComponent},
-  { path: 'adminuser', component: AdminuserComponent},
   { path: 'vieworder', component: VieworderComponent},
   { path: 'addproduct', component: AddproductComponent },
   { path: 'productlist', component: ProductlistComponent },
