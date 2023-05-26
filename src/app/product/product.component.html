@@ -1,19 +1,20 @@
 <app-header></app-header>
-<div class="container">
- <h1>iPhone 14 Pro Max</h1>
-</div>
-<hr style="background-color: #cccccc; margin-bottom: 50px;">
-<div class="container">
+<div class="container" *ngIf="product">
+
+  <hr style="background-color: #cccccc; margin-bottom: 50px;">
+
+  <div class="container">
     <div class="box">
       <div class="img-border">
-        <img [src]="selectedImage" alt="Image 1">
+        <img [src]="product.productImgURL" [alt]="product.productName">
       </div>
     </div>
     <div class="information">
-      <h2>iPhone 14 Pro Max</h2>
-      <h3>1.000$</h3>
-      <div class="form-group">
-        <textarea id="description" name="description" rows="5" required></textarea>
+      <h1>{{ product.productName }}</h1>
+      <h3>{{ product.price }}</h3>
+
+      <div class="desc">
+        <p>{{ product.productDesc }}</p>
       </div>
       <div class="addcart">
         <button class="add">ADD TO CART</button>
