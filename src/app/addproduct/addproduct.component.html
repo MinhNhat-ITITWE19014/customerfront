@@ -21,17 +21,18 @@
       <input type="text" name="price" [(ngModel)]="product.price" required>
       <div *ngIf="addProductForm.controls['price']?.touched && addProductForm.controls['price'].hasError('required')"
         class="error-message">
-        Price is required.
+        <span class="error-message"> *Price is required</span>
       </div>
-
+<div class="spaceq">
       <label for="quantity">Quantity:</label>
       <input type="number" name="quantityInStock" [(ngModel)]="product.quantityInStock" required appPriceformat>
       <div
         *ngIf="addProductForm.controls['quantityInstock']?.touched && addProductForm.controls['quantityInstock'].hasError('required')"
         class="error-message">
-        Quantity is required.
+        <span class="error-message"> *Quantity is required</span>
       </div>
-
+    </div>
+<br>
       <label for="category">Category:</label>
       <select name="category" [(ngModel)]="product.category.categoryID" required>
         <option value="">--Select Category--</option>

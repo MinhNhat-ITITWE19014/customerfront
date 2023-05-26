@@ -1,68 +1,70 @@
 .product-list {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
- .container {
-    margin-top: 20px;
-    padding:20px 60px 60px 60px;
-    border: 1px solid #ccc;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 50px;
-  }
+.container {
+  margin-top: 20px;
+  padding: 20px 60px 60px 60px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 50px;
+}
 
-  .CusorPro {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
+.CusorPro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-  .plink{
-    color: #121111;
-    font-size: 30px;
-    margin: 0 10px;
-    text-decoration: underline;
-  }
+.plink {
+  color: #121111;
+  font-size: 30px;
+  margin: 0 10px;
+  text-decoration: underline;
+}
 
-  .clink {
-    color: #b3b3b3;
-    font-size: 30px;
-    margin: 0 10px;
-  }
+.clink {
+  color: #b3b3b3;
+  font-size: 30px;
+  margin: 0 10px;
+}
 
-  .clink:hover {
-    color: black; /* Add desired hover color */
-  }
+.clink:hover {
+  color: black; /* Add desired hover color */
+}
 
-  .vertical-slash {
-    width: 2px;
-    height: 45px;
-    background-color: #737373;
-    margin: 0 10px;
-  }
+.vertical-slash {
+  width: 2px;
+  height: 45px;
+  background-color: #737373;
+  margin: 0 10px;
+}
 
-  .list table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .list th, .list td {
-    padding: 8px;
-    text-align: center;
+.list table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  }
-  .list th {
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #ddd;
-  }
+.list th,
+.list td {
+  padding: 8px;
+  text-align: center;
+}
 
-  .delete-link {
-    margin-top: 3px;
-    font-size: 15px;
-    color: #0000e6;
-    float: right;
-  }
+.list th {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+}
 
-  .delete-link:hover{
-    color: red;
-    text-decoration: underline;
-  }
+.delete-link {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: #0000e6;
+}
+
+.delete-link:hover {
+  color: red;
+  text-decoration: underline;
+}

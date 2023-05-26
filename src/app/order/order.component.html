@@ -1,3 +1,43 @@
 <app-header></app-header>
-<p>order works!</p>
- xác nhận mua hàng
+<section class="order-info">
+    <div class="container">
+      <h1>Order Information</h1>
+      <div class="orderid">
+        <h2>OrderID:</h2>
+        <h2>CartID:</h2>
+      </div>
+      <hr style="color: black; margin-bottom: 50px;">
+      <table class="customer-details">
+        <tr>
+          <td><label for="customerId">Customer ID:</label></td>
+          <td><input type="text" id="customerId" name="customerId"></td>
+          <td><label for="fullName">Full Name:</label></td>
+          <td><input type="text" id="fullName" name="fullName"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td colspan="3"><input type="text" id="address" name="address"></td>
+        </tr>
+      </table>
+      <div class="payment-method">
+        <h2>Payment Method:</h2>
+        <div class="visaPayment">
+          <input type="checkbox" id="visaPayment" name="paymentMethod" value="visa">
+          Via Visa
+        </div>
+        <div class="cashPayment">
+          <input type="checkbox" id="cashPayment" name="paymentMethod" value="cash">
+          Via Cash
+        </div>
+      </div>
+      <div class="price">
+        <h2>Total Price:</h2>
+        <h3>2 chục ngàn</h3>
+      </div>
+      <div class="confirm-button">
+      <button class="confirm" type="submit">Confirm Order</button>
+    </div>
+    </div>
+  </section>
+  
+  

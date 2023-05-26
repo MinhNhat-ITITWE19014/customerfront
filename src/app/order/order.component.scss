@@ -1,0 +1,98 @@
+.container {
+    margin-top: 20px;
+    padding: 20px 60px 60px 60px;
+    border: 1px solid #ccc;
+    width: 800px;
+    height: fit-content;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .customer-details {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: auto;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  
+  label, h2 {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .payment-method {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  label input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  h1{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+  }
+
+.orderid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    margin-top: 30px;
+    text-align: right;
+}
+
+.price h2{
+    font-size: 18px;
+    color: black;
+}
+
+.price h3{
+    color: red;
+    font-size: 20px;
+}
+
+.confirm {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ }
+
+ .confirm:hover{
+        color: red;
+        background-color: white;
+        border: solid red;
+    }
+ 

@@ -19,7 +19,20 @@ h1{
     width: fit-content;
 }
 
-.information{
+.information h2{
+    color: black;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.information h3{
+    color: red;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.information {
     color: red;
     font-size: 30px;
     font-family: sans-serif;
@@ -90,3 +103,15 @@ h1{
 .mem.active {
     background-color: #ffad33;
 }
+
+.form-group {
+    margin-top: 50px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
