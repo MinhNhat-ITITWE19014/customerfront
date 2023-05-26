@@ -1,30 +1,24 @@
 <app-header></app-header>
-<div class="container">
- <h1>iPhone 14 Pro Max</h1>
-</div>
-<hr style="background-color: #cccccc; margin-bottom: 50px;">
-<div class="container">
+<div class="container" *ngIf="product">
+
+  <hr style="background-color: #cccccc; margin-bottom: 50px;">
+
+  <div class="container">
     <div class="box">
       <div class="img-border">
-        <img [src]="selectedImage" alt="Image 1">
+        <img [src]="product.productImgURL" [alt]="product.productName">
       </div>
     </div>
     <div class="information">
-      <h3>1.000$</h3>
-      <div class="memory">
-        <button class="mem" [class.active]>128GB</button>
-        <button class="mem" [class.active]>256GB</button>
-        <button class="mem" [class.active]>512GB</button>
-        <button class="mem" [class.active]>1TB</button>
-      </div>
-      <div class="color">
-        <button class="bcolor" [class.active]="selectedImage === 'assets/ip14mb.png'" (click)="changeImage('assets/ip14mb.png')">Black</button>
-        <button class="bcolor" [class.active]="selectedImage === 'assets/ip14mg.png'" (click)="changeImage('assets/ip14mg.png')">Gold</button>
-        <button class="bcolor" [class.active]="selectedImage === 'assets/ip14mw.png'" (click)="changeImage('assets/ip14mw.png')">White</button>
-        <button class="bcolor" [class.active]="selectedImage === 'assets/ip14mp.png'" (click)="changeImage('assets/ip14mp.png')">Purple</button>
+      <h1>{{ product.productName }}</h1>
+      <h3>{{ product.price }}</h3>
+
+      <div class="desc">
+        <p>{{ product.productDesc }}</p>
       </div>
       <div class="addcart">
         <button class="add">ADD TO CART</button>
       </div>
     </div>
   </div>
+</div>
