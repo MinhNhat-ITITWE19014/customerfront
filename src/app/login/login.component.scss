@@ -3,7 +3,6 @@
 }
 
 
-
 input[type=text], input[type=password], input[type=int] {
     width: 100%;
     padding: 15px;
@@ -59,14 +58,9 @@ button:hover {
   
   
   
-  
-  /* Styling for the error messages */
   .error-message {
-    color: red; /* Update the error message color as desired */
-    /* Add any other styles specific to the error messages */
+    color: red;
   }
-  
-  /* Styling for the buttons */
  
   .signup-text{
   margin-right: 10px;
@@ -92,7 +86,7 @@ button:hover {
   }
   
   .slink:hover {
-    color: black; /* Add desired hover color */
+    color: black; 
   }
   
   .vertical-slash {

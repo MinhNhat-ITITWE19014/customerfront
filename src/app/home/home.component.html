@@ -2,11 +2,12 @@
 <app-banner></app-banner>
 <div class="hr-container">
     <hr class="custom-hr">
-    <span class="slogan">🔥OUR HOT ITEMS🔥</span>
+    <span class="slogan">🔥OUR NEW ITEMS🔥</span>
     <hr class="custom-hr">
   </div>
   <div class="itemname">
 <h2>IPHONE</h2>
+<hr>
 <div class="picture-container">
   <div class="picture-item" *ngFor="let product of products">
     <a [routerLink]="'/product/' + product.productID">
@@ -20,3 +21,76 @@
   <div class="itemname">
     <h2>IPAD</h2>
     </div>
+    <hr>
+    <div class="picture-container">
+      <div class="picture-item">
+        <a routerLink="/product">
+          <img src="assets/ipadpro.png" alt="Image 1">
+        </a>
+        <a routerLink="/product" class="picture-name">iPad Pro M2 11"</a>
+        <h2>799$</h2>
+      </div>
+
+      <div class="picture-item">
+        <a href="/product">
+          <img src="assets/ipadpro.png" alt="Image 2">
+        </a>
+        <a href="/product" class="picture-name">iPad Pro M2 12.9"</a>
+        <h2>1099$</h2>
+      </div>
+
+      <div class="picture-item">
+        <a routerLink="/product">
+          <img src="assets/ipa5.png" alt="Image 1">
+        </a>
+        <a routerLink="/product" class="picture-name">iPad Air 5</a>
+        <h2>599$</h2>
+      </div>
+
+      <div class="picture-item">
+        <a routerLink="/product">
+          <img src="assets/ipag10.png" alt="Image 1">
+        </a>
+        <a routerLink="/product" class="picture-name">iPad Gen 10</a>
+        <h2>449$</h2>
+      </div>
+    </div>
+
+    <div class="itemname">
+      <h2>MACBOOK</h2>
+      </div>
+      <hr>
+      <div class="picture-container">
+        <div class="picture-item">
+          <a routerLink="/product">
+            <img src="assets/mapro13.png" alt="Image 1">
+          </a>
+          <a routerLink="/product" class="picture-name">MacBook Pro 13"</a>
+          <h2>1299$</h2>
+        </div>
+
+        <div class="picture-item">
+          <a href="/product">
+            <img src="assets/mapro14.png" alt="Image 2">
+          </a>
+          <a href="/product" class="picture-name">MacBook Pro 14"</a>
+          <h2>1999$</h2>
+        </div>
+
+        <div class="picture-item">
+            <a href="/product">
+              <img src="assets/mapro16.png" alt="Image 2">
+            </a>
+            <a href="/product" class="picture-name">MacBook Pro 16"</a>
+            <h2>2499$</h2>
+          </div>
+
+          <div class="picture-container">
+            <div class="picture-item">
+              <a routerLink="/product">
+                <img src="assets/maam2.png" alt="Image 1">
+              </a>
+              <a routerLink="/product" class="picture-name">MacBook Air M2</a>
+              <h2>1199$</h2>
+            </div>
+      </div>

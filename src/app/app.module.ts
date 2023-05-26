@@ -25,6 +25,8 @@ import { VieworderComponent } from './vieworder/vieworder.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
+import { IpadcategoryComponent } from './ipadcategory/ipadcategory.component';
+import { MaccategoryComponent } from './maccategory/maccategory.component';
 
 
 @NgModule({

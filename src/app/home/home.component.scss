@@ -82,3 +82,47 @@
     margin-left: 30px;
     text-decoration: underline;
   }
+
+  .picture-item14 {
+    width: 200px; 
+    text-align: center;
+    margin:20px 20px;
+  }
+
+  .picture-item14 a {
+    display: block;
+  text-align: center;
+  }
+
+  .picture-item14 h2 {
+    color: black;
+    font-size: 25px;
+    display: block;
+  text-align: center;
+  }
+
+  .picture-name14 {
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .picture-name14:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .picture-item14 img {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .picture-item14 img:hover {
+    transform: scale(1.2); 
+  }

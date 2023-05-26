@@ -1,54 +1,17 @@
 <nav class="navbar is-black" role="navigation" aria-label="main navigation">
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" routerLink="/adminhomepage">
-          <a class="text"> Home </a>
-        </a>
-  
-        <div class="navbar-item link has-dropdown is-hoverable">
-          <div class="navbar-item">
-            <a class="text"> More <fa-icon [icon]="faAngleDown"></fa-icon></a>
-          </div>
-         <div class="subnavbar">
-          <div class="row">
-            <div class="column">
-             <h3>Iphone</h3>
-              <a href="#">Iphone11</a>
-              <a href="#">Iphone12</a>
-              <a href="#">Iphone13</a>
-              <a href="#">Iphone13 Pro</a>
-              <a href="#">Iphone13 Pro Max</a>
-              <a href="#">Iphone14</a>
-              <a href="#">Iphone14 Pro</a>
-              <a href="#">Iphone14 Pro Max</a>
-            </div>
-            <div class="column">
-              <h3>Ipad</h3>
-              <a href="#">Ipad Mini 6</a>
-              <a href="#">Ipad Air 4</a>
-              <a href="#">Ipad Pro 2021</a>
-              <a href="#">Ipad Pro 2022</a>
-            </div>
-            <div class="column">
-              <h3>MacBook</h3>
-              <a href="#">MacBook Pro 2021</a>
-              <a href="#">MacBook Pro 2022</a>
-            </div>
-          </div>
+        <div class="navbar-item">
+          <a class="logo">
+            <img src="/assets/pear.png" alt="Logo" >
+          </a>
         </div>
       </div>
-    </div>
       <div class="navbar-end">
         <div class="navbar-item">
-            <a class="user-icon" routerLink="/adminuser">
+            <a class="user-icon" routerLink="/customerlist">
               <fa-icon [icon]="faUser"></fa-icon>
             </a>
-        </div>
-        <div class="navbar-item">
-          <a class ="vieworder-icon" routerLink="/vieworder">
-            <fa-icon [icon]="faClipboard"></fa-icon>
-        </a>
-        <span class="number-cart">0</span>
         </div>
         <div class="navbar-item">
           <a class ="list-icon" routerLink="/productlist">
@@ -56,11 +19,23 @@
         </a>
         </div>
         <div class="navbar-item">
+          <a class ="vieworder-icon" routerLink="/vieworder">
+            <fa-icon [icon]="faClipboard"></fa-icon>
+        </a>
+        <span class="number-cart">0</span>
+        </div>
+       
+        <div class="navbar-item">
           <a class ="plus-icon" routerLink="/addproduct">
             <fa-icon [icon]="faPlus"></fa-icon>
         </a>
         </div>
        
+        <div class="navbar-item">
+          <a class ="logout-icon" routerLink="/login">
+            <fa-icon [icon]="faArrowRightFromBracket"></fa-icon>
+        </a>
+        </div>
       </div>
     </div>
   </nav>

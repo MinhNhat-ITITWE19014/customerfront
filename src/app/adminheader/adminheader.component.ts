@@ -4,6 +4,7 @@ import { faClipboard} from '@fortawesome/free-solid-svg-icons';
 import { faClipboardList} from '@fortawesome/free-solid-svg-icons';
 import { faPlus} from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightFromBracket} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-adminheader',
   templateUrl: './adminheader.component.html',
@@ -15,4 +16,5 @@ export class AdminheaderComponent {
   faPlus = faPlus;
   faClipboardList = faClipboardList;
   faAngleDown = faAngleDown;
+  faArrowRightFromBracket = faArrowRightFromBracket;
 }

@@ -19,6 +19,8 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
+import { IpadcategoryComponent } from './ipadcategory/ipadcategory.component';
+import { MaccategoryComponent } from './maccategory/maccategory.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent ,canActivate:[AuthGuard]},
@@ -41,6 +43,8 @@ const routes: Routes = [
   { path: 'addproduct', component: AddproductComponent },
   { path: 'productlist', component: ProductlistComponent },
   { path: 'customerlist', component: CustomerlistComponent },
+  { path: 'ipadcategory', component: IpadcategoryComponent},
+  { path: 'maccategory', component: MaccategoryComponent},
 ];
 
 @NgModule({
