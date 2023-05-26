@@ -52,7 +52,8 @@ import { MaccategoryComponent } from './maccategory/maccategory.component';
     AddproductComponent,
     ProductlistComponent,
     CustomerlistComponent,
-
+    IpadcategoryComponent,
+    MaccategoryComponent,
   ],
   imports: [
     BrowserModule,

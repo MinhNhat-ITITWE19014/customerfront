@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class SignupComponent {
   errorMessage: string ='';
   customer: Customer = {
+    customerID: 0,
     userName: '',
     password: '',
     fullName: '',

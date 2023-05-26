@@ -23,17 +23,17 @@
     margin: 0 10px;
     text-decoration: underline;
   }
-  
+
   .clink {
     color: #b3b3b3;
     font-size: 30px;
     margin: 0 10px;
   }
-  
+
   .clink:hover {
     color: black; /* Add desired hover color */
   }
-  
+
   .vertical-slash {
     width: 2px;
     height: 45px;
@@ -48,20 +48,20 @@
   .list th, .list td {
     padding: 8px;
     text-align: center;
-    
+
   }
   .list th {
     background-color: #f2f2f2;
     border-bottom: 1px solid #ddd;
   }
-  
+
   .delete-link {
     margin-top: 3px;
     font-size: 15px;
     color: #0000e6;
     float: right;
   }
-  
+
   .delete-link:hover{
     color: red;
     text-decoration: underline;
