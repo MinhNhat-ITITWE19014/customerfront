@@ -15,10 +15,9 @@ export class HomeComponent implements OnInit {
     'assets/pimage4.png',
     'assets/pimage5.png'
   ];
-  constructor(private productService: ProductService) { }
-
   products: Product[] = [];
 
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productService.getProducts(5).subscribe(

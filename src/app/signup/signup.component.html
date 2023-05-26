@@ -5,6 +5,7 @@
       <span class="vertical-slash"></span>
       <h4 routerLink="/signup" class="slink">Signup</h4>
     </div>
+
     <form #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
 
       <label for="name"><b>Fullname:</b> </label><br>
@@ -41,7 +42,7 @@
       <input type="password" placeholder="Confirm password" [(ngModel)]="customer.confirmPassword" name="cPassword"
         required><br>
       <span class="error-message" *ngIf="signupForm.controls['cPassword']?.hasError('incorrect')">*Password does not
-        match confirmation!</span>
+        match confirmation!</span><br/>
 
       <label for="addressNum"><b>Street number:</b></label>
       <input type="text" placeholder="Street Number" name="addressNum" [(ngModel)]="customer.address.streetNum"

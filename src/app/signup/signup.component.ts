@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class SignupComponent {
   errorMessage: string ='';
   customer: Customer = {
+    customerID: 0,
     userName: '',
     password: '',
     fullName: '',
@@ -32,9 +33,9 @@ export class SignupComponent {
   constructor(private customerService: CustomerService, private router: Router) { }
 
   signup(signupForm: NgForm) {
+    // check for confimation password and input password for matches
     const password = signupForm.form.controls['password'].value;
     const cPassword = signupForm.form.controls['cPassword'].value;
-    console.log(signupForm);
     if(password == cPassword){
       signupForm.form.controls['cPassword'].setErrors(null);
     }
@@ -52,12 +53,12 @@ export class SignupComponent {
 
         // Check if the control is invalid and has been touched or submitted
         if (control.invalid && (control.touched || signupForm.submitted)) {
-          console.log(`${controlName} is required`);
+            console.log(`${controlName} is required`);
           // Display error message or perform any other action
         }
       });
 
-      //return;
+      return;
     }
 
 
@@ -70,7 +71,7 @@ export class SignupComponent {
           }else {
           // Handle the success response
           console.log('Success customer request:', response);
-          // Redirect to success page or show a success message
+          // Redirect to success result page or show a success message
           this.router.navigate(['/successpage']);
         }
       },

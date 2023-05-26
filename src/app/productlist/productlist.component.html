@@ -1,39 +1,28 @@
 <app-adminheader></app-adminheader>
 <section class="product-list">
-    <div class="container">
-      <div class="CusorPro">
-        <h4 routerLink="/productlist" class="plink">Product</h4>
-      </div>
-      <div class="list">
-        <table>
-            <tr class="head-row">
-                <th>Category ID</th>
-                <th>Category Name</th>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Quanity</th>
-                <th>Price</th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>1(iphoneid=1)</td>
-                <td>Iphone</td>
-                <td>3</td>
-                <td>ip13</td>
-                <td>11</td>
-                <td>20k</td>
-                <td><a href="#" class="delete-link">Delete</a></td>
-              </tr>
-              <tr>
-                <td>2(ipadid=2)</td>
-                <td>Ipad</td>
-                <td>4</td>
-                <td>ipadpro2022</td>
-                <td>11</td>
-                <td>30k</td>
-                <td><a href="#" class="delete-link">Delete</a></td>
-              </tr>
-        </table>
-      </div>
+  <div class="container">
+    <div class="CusorPro">
+      <h4 routerLink="/productlist" class="plink">Product</h4>
     </div>
+    <div class="list">
+      <table>
+        <tr class="head-row">
+          <th>ProductID</th>
+          <th>Name</th>
+          <th>Category Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Delete Product</th>
+        </tr>
+        <tr *ngFor="let product of products">
+          <td>{{ product.productID }}</td>
+          <td>{{ product.productName }}</td>
+          <td>{{ product.category.categoryName }}</td>
+          <td>{{ product.quantityInStock }}</td>
+          <td>{{ product.price }}</td>
+          <td><a class="delete-link" (click)="deleteProduct(product.productID)">Delete</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </section>
