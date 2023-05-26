@@ -26,6 +26,7 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { IpadcategoryComponent } from './ipadcategory/ipadcategory.component';
 import { MaccategoryComponent } from './maccategory/maccategory.component';
+import { EndpageComponent } from './endpage/endpage.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { MaccategoryComponent } from './maccategory/maccategory.component';
     CustomerlistComponent,
     IpadcategoryComponent,
     MaccategoryComponent,
+    EndpageComponent,
   ],
   imports: [
     BrowserModule,

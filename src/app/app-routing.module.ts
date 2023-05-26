@@ -20,6 +20,7 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { IpadcategoryComponent } from './ipadcategory/ipadcategory.component';
 import { MaccategoryComponent } from './maccategory/maccategory.component';
+import { EndpageComponent } from './endpage/endpage.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent ,canActivate:[AuthGuard]},
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'customerlist', component: CustomerlistComponent },
   { path: 'ipadcategory', component: IpadcategoryComponent},
   { path: 'maccategory', component: MaccategoryComponent},
+  { path: 'endpage', component: EndpageComponent},
 ];
 
 @NgModule({
