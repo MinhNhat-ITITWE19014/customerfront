@@ -7,39 +7,14 @@
   </div>
   <div class="itemname">
 <h2>IPHONE</h2>
-</div>
 <hr>
 <div class="picture-container">
-  <div class="picture-item">
-    <a routerLink="/product">
-      <img src="assets/pimage1.png" alt="Image 1">
+  <div class="picture-item" *ngFor="let product of products">
+    <a [routerLink]="'/product/' + product.productID">
+      <img [src]="product.productImgURL" [alt]="product.productName">
     </a>
-    <a routerLink="/product" class="picture-name">iPhone 14 Pro Max</a>
-    <h2>1.099$</h2>
-  </div>
-
-  <div class="picture-item">
-    <a routerLink="/product">
-      <img src="assets/pimage2.png" alt="Image 2">
-    </a>
-    <a routerLink="/product" class="picture-name">iPhone 14 Pro</a>
-    <h2>999$</h2>
-  </div>
-
-  <div class="picture-item14">
-    <a routerLink="/product">
-      <img src="assets/ip14.jpg" alt="Image 3">
-    </a>
-    <a routerLink="/product" class="picture-name14">iPhone 14 Plus</a>
-    <h2>899$</h2>
-  </div>
-
-  <div class="picture-item14">
-    <a routerLink="/product">
-      <img src="assets/ip14.jpg" alt="Image 4">
-    </a>
-    <a routerLink="/product" class="picture-name14">iPhone 14 </a>
-    <h2>799$</h2>
+    <a [routerLink]="'/product/' + product.productID" class="picture-name">{{ product.productName }}</a>
+    <h2>{{ product.price }}</h2>
   </div>
 </div>
 
