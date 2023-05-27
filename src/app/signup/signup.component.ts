@@ -45,40 +45,35 @@ export class SignupComponent {
       return;
     }
 
-
+    //use formControl from ngForm in Angular to check if the form is invalid
     if (signupForm.invalid) {
-      // Loop through each form control
       Object.keys(signupForm.controls).forEach(controlName => {
         const control = signupForm.controls[controlName];
 
-        // Check if the control is invalid and has been touched or submitted
+        // check if the control is invalid and has been touched or submitted
         if (control.invalid && (control.touched || signupForm.submitted)) {
             console.log(`${controlName} is required`);
-          // Display error message or perform any other action
         }
       });
 
       return;
     }
 
-
-    // Call the createCustomer method of the CustomerService
     this.customerService.createCustomer(this.customer)
       .subscribe(
         (response:any) => {
           if(response.Error){
             this.errorMessage = response.Error;
           }else {
-          // Handle the success response
           console.log('Success customer request:', response);
-          // Redirect to success result page or show a success message
+          // redirect to success result page or show a success message
           this.router.navigate(['/successpage']);
         }
       },
         error => {
-          // Handle the error response
+          // handle the error response
           console.error('Error creating customer:', error);
-          // Show an error message to the user
+          // show an error message to the user
         }
       );
   }

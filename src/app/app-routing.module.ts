@@ -35,7 +35,7 @@ const routes: Routes = [
   { path: 'banner', component: BannerComponent},
   { path: 'product/:id', component: ProductComponent},
   { path: 'successpage', component: SuccesspageComponent},
-  { path: 'shoppingcart', component: ShoppingcartComponent},
+  { path: 'shoppingcart/', component: ShoppingcartComponent}, //** FOR DEMO ONLY /:CARTID */
   { path: 'adminheader', component: AdminheaderComponent},
   { path: 'adminhomepage', component: AdminhomepageComponent},
   { path: 'adminuser', component: AdminuserComponent},
