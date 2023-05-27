@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
     'assets/pimage5.png'
   ];
   products: Product[] = [];
-
+  ipadProducts: Product[] = [];
+  iphoneProducts: Product[] =[];
+  macProducts: Product[] = [];
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -26,6 +28,32 @@ export class HomeComponent implements OnInit {
       },
       (error) => {
         console.error('Failed to fetch products:', error);
+      }
+    );
+
+    this.productService.listIpadProducts(5).subscribe(
+      (ipadProducts: Product[]) => {
+        this.ipadProducts = ipadProducts;
+      },
+      (error) => {
+        console.error('Failed to fetch iPad products:', error);
+      }
+    );
+
+    this.productService.listIphoneProducts(5).subscribe(
+      (iphoneProducts: Product[]) => {
+        this.iphoneProducts = iphoneProducts;
+      },
+      (error) => {
+        console.error('Failed to fetch iPhone products:', error);
+      }
+    );
+    this.productService.listMacProducts(5).subscribe(
+      (macProducts: Product[]) => {
+        this.macProducts = macProducts;
+      },
+      (error) => {
+        console.error('Failed to fetch Mac products:', error);
       }
     );
   }

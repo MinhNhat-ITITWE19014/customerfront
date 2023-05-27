@@ -26,7 +26,7 @@ export class LoginService {
       }),
       catchError(error => {
         console.error('Login Error:', error);
-        throw error; // rethrow the error to propagate it to the login component
+        throw error;
       })
     );
   }

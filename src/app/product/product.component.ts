@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../interface/product';
 import { ProductService } from '../service/product.service';
+import { ShoppingCartService } from '../service/shopping-cart.service';
+import { ShoppingCart } from '../interface/shoppingcart';
 
 @Component({
   selector: 'app-product',
@@ -14,8 +16,10 @@ export class ProductComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
-  ) {}
+    private productService: ProductService,
+    private shoppingCartService: ShoppingCartService,
+    private router:Router,
+  ) { }
 
   ngOnInit(): void {
     const idProduct = this.activatedRoute.snapshot.params['id'];
@@ -29,6 +33,30 @@ export class ProductComponent implements OnInit {
       },
       (error) => {
         console.error('Failed to fetch product:', error);
+      }
+    );
+  }
+  addToCart(): void {
+    if (!this.product) {
+
+      console.error('Product is undefined');
+      return;
+    }
+    const cartItem: ShoppingCart = {
+      cartID: 0,          // init cartID
+      productQuantity: 1, // assign the desired product quantity
+      product: this.product // assign the selected product
+    };
+
+    this.shoppingCartService.createCart(cartItem).subscribe(
+      (response) => {
+        console.log('Cart created successfully:', response);
+        // an redirect function to take the parameter of the cartID
+        //  this.router.navigate(['/cart', response.cartID]); // ** INCOMPLETE
+      },
+      (error) => {
+        console.error('Failed to create cart:', error);
+        // handle error case
       }
     );
   }

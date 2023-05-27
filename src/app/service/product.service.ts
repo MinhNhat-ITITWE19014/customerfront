@@ -34,4 +34,15 @@ export class ProductService {
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(`${this.baseUrl}/categories`);
   }
+  listIpadProducts(limit: number): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.baseUrl}/listcategory?limit=${limit}`);
+  }
+
+  listIphoneProducts(limit: number): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.baseUrl}/listiphone?limit=${limit}`);
+  }
+
+  listMacProducts(limit: number): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.baseUrl}/listmac?limit=${limit}`);
+  }
 }
